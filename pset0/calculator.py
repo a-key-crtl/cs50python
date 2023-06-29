@@ -17,6 +17,7 @@
 
 # print(f"{z:,}") #output will have a comma
 
+
 def main():
     x = int(input("What's x? "))
     print("x squared is", square(x))
