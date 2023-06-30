@@ -16,7 +16,9 @@ for letter in camelCase:
     if letter.isupper(): 
 
         # Print underscores and the letter in lowercase
-
+        print("_" + letter.lower(), end="")
     # Otherwise, print letter
-
+    else:
+        print(letter, end="")
 # Print space in the end
+print()
