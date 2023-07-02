@@ -9,10 +9,11 @@ answer = input("Input: ")
 print("Output: ", end="")
 
 # Loop through every letter
-
+for letter in answer:
     # Check if it is not vowels whether inputted in upper case or lowercase
-
+    if not letter.lower() in ['a', 'e', 'i', 'o', 'u']:
         # Print the letter
+        print(letter, end="")
 
-        
 # Print the new line
+print()
