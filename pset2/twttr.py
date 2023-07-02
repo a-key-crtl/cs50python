@@ -3,13 +3,16 @@
 
 
 # Collect user string with vowels
-vowel = input("Input: ")
+answer = input("Input: ")
 
-for v in vowel:
-    print("Output: ")
-    match v:
-        case "a" | "A" | "e" | "E" | "i" | "I" | "O" | "o" | "u" | "U":
-            print(v.replace(""))
-        case _:
-            print(v)
+# Print "Output: "
+print("Output: ", end="")
 
+# Loop through every letter
+
+    # Check if it is not vowels whether inputted in upper case or lowercase
+
+        # Print the letter
+
+        
+# Print the new line
