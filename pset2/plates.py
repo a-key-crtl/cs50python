@@ -29,7 +29,7 @@ def is_valid(s):
         i += 1
     # No periods, spaces, or punctuation marks allowed
     for d in s:
-        if d in ['.',' ' ,'!' , '?']:
+        if d in ['.', ' ' , '!', '?']:
             return False
     
     # Pass all the tests return true
