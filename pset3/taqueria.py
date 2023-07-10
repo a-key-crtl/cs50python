@@ -14,17 +14,21 @@ menu = {
     "Tortilla Salad": 8.00
 }
 
+# User initial ordering price
 price = 0
 
 while True:
     try:
+        # User selects item off of the menu
         item = input("Item: ").title()
         if item in menu:
             price = price + float(menu[item])
             format_price = "{:.2f}".format(price)
             print("Price: $", format_price)
+    # When user types ctrl-d on keyboard exits program
     except EOFError:
         print("\n")
         break
+    # When user input not found menu dict
     except KeyError:
         pass
