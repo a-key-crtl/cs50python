@@ -24,8 +24,11 @@ fruits = {
     "watermelon": "80"
 }
 
+# Prompts user for item name, loops if not in fruits dict
 while True:
+    # User inputs item case-insensitively
     item = input("Item: ").lower()
+    # User string matches fruits dict, outputs associated calories
     if item in fruits:
         print("Calories:", fruits[item])
         break

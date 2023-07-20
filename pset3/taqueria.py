@@ -20,7 +20,7 @@ price = 0
 while True:
     try:
         # User selects item off of the menu
-        item = input("Item: ").title()
+        item = input("Item: ").title() #returns string where words start with uppercase character remaining lowercase
         if item in menu:
             price = price + float(menu[item])
             format_price = "{:.2f}".format(price)
