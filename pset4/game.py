@@ -24,10 +24,12 @@ while True:
                 try:
                     guess = int(input("Guess: "))
                     
+                    # If guess is negative or 0
+                    if guess < 1:
+                        pass
                     # If guess is smaller than answer
-                    if guess < answer:
+                    elif guess < answer:
                         print("Too small!")
-                    
                     # If guess is larger than the answer
                     elif guess > answer:
                         print("Too large!")
@@ -37,6 +39,7 @@ while True:
                         break
                 except ValueError or TypeError:
                     pass
-        break      
+        if level >= 1:
+            break    
     except ValueError or TypeError:
         pass
