@@ -1,3 +1,7 @@
+# program overlays shirt from one file onto anoth
+#
+#
+
 import sys
 from os.path import splitext
 from PIL import Image, ImageOps
@@ -29,7 +33,7 @@ def check_command_line_arg():
     file1 = splitext(sys.argv[1])
     file2 = splitext(sys.argv[2])
     # check if it is a Image file
-    if check_extension(file1[1]) == False or check_extension(file2[1]) == False:
+    if check_extension(file1[1]) is False or check_extension(file2[1]) is False:
         sys.exit("Invalid output")
     # Check if extension of both files are the same
     if file1[1].lower() != file2[1].lower():

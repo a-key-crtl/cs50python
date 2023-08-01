@@ -10,6 +10,7 @@ from tabulate import tabulate
 
 
 def main():
+    
     check_command_line_arg()
     menu = []
     
